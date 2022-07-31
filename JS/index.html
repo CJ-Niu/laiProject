@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Basic</title>
+</head>
+<body>
+<!-- <h1 onclick="alert('style 1')">click</h1> -->
+
+<!-- <script type="text/javascript">
+    alert("style 2")
+</script> -->
+<script src="js/variable.js"></script>
+<script src="js/scope.js"></script>
+<script src="js/function.js"></script>
+<script src="js/datatype.js"></script>
+<script src="js/hoisting.js"></script>
+
+<script>
+    fn();   // result: 2
+    var fn = function() {
+        console.log(1);
+    }
+    function fn() {
+        console.log(2);
+    }
+    fn();   // result: 1
+</script>
+</body>
+</html>
